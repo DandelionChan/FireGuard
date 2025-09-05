@@ -4,6 +4,9 @@ import Map from "./homeFiles/Map";
 import VolunteersInfo from "./homeFiles/VolunteersInfo";
 import Funds from "./homeFiles/Funds";
 import Footer from "./homeFiles/Footer";
+import Videoinfo from "./videosinfo";
+
+
 
 const Home = () => {
     return (
@@ -12,7 +15,7 @@ const Home = () => {
        <Head />
        <Map />
        <VolunteersInfo />
-       
+       <Videoinfo />
        <Funds />
        <Footer />
         </>

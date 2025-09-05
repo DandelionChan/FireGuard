@@ -1,8 +1,7 @@
-import Navigation from "./homeFiles/Navigation";
-
-const Volunteers = () => {
+const Volunteers = ({}) => {
     return (
-         <h1>Vonpm lunteers</h1>
+        <>
+        </>
     )
 }
 

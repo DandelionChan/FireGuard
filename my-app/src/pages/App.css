@@ -9,10 +9,32 @@
   border-style: solid;
 }
 
+.bgColor {
+  background-color: rgb(250, 250, 193);
+}
+
 .flexContainer {
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centervertically {
+align-items: center;
+text-align: center;
+}
+
+.flexColumn {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
 }
 
 .navigationList {
@@ -57,4 +79,48 @@
 .headerText p {
   margin-left: 30px;
 }
+
+.centeredTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centeredText {
+  text-align: center;
+}
+
+.partner {
+  width: 20px;
+  height: 20px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+  color: black;
+}
+
+.card {
+  width: 30%;
+  height: 500px;
+}
+
+.card h3 {
+  margin: 0;
+}
+
+.card p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.gridColumnCard {
+  display: grid;
+  grid-template-rows: 2fr 0.5fr 2fr;
+}
+
 

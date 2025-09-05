@@ -1,0 +1,18 @@
+{
+  "volunteers": [
+    {
+      "id": 1,
+      "name": "Alice Johnson",
+      "email": "alice@example.com",
+      "phone": "123-456-7890",
+      "skills": "Cooking, Teaching"
+    },
+    {
+      "id": 2,
+      "name": "Bob Smith",
+      "email": "bob@example.com",
+      "phone": "987-654-3210",
+      "skills": "First Aid, Organizing"
+    }
+  ]
+}

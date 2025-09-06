@@ -26,6 +26,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  /* width: 100%;
+  height: 500px; */
 }
 
 .center {
@@ -101,7 +103,7 @@ line-height: 100%;
 }
 
 .gradient {
-  position: relative;
+  width: 100%;
   z-index: 0;
   height: calc(100vh - 77px);
   aspect-ratio: 16 / 9;
@@ -234,6 +236,9 @@ color: #081F5C;
 font-family: Roboto;
 font-weight: 600;
 font-size: 42px;
+padding-bottom: 48px;
+padding-top: 80px;
+margin: 0;
 line-height: 110.00000000000001%;
 text-align: center;
 color: #081F5C;
@@ -252,11 +257,20 @@ color: #081F5C;
 }
 
 .formVolText {
-  width: 650px;
+  position: absolute;
+  right: 0;
+  width: calc(100vw - 650px);
   height: 100vh;
+  display: flex;
+  justify-content: center;
   background-color: #081F5C;
-  padding-left: 50px;
   color: white;
+  z-index: 0;
+}
+
+.rel {
+    height: 100vh;
+    position: relative;
 }
 
 .leftAlign {
@@ -293,12 +307,6 @@ color: #21272A;
   justify-content: space-between;
 }
 
-.FormVol {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-}
-
 .flexColumns {
   display: flex;
   flex-direction: column;
@@ -312,6 +320,7 @@ color: #21272A;
 }
 
 .VolunteerForm {
+  height: 100vh;
   max-width: 616px;
   background-color: #081F5C;
 }
@@ -358,7 +367,7 @@ position: absolute;
 left: 0;
 width: 700px;
 height: 100vh;
-z-index: -1;
+z-index: -2;
 aspect-ratio: 16 / 9;
 object-fit: cover;
 }
@@ -367,14 +376,14 @@ object-fit: cover;
   position: absolute;
   z-index: 0;
   height: 574px;
-  left: 550px
+  left: 550px;
 }
 
 .formRightBlueGradient {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   position: absolute;
-  z-index: 0;
+  z-index: -1;
   height: 100vh;
   right: 750px;
 }
@@ -450,3 +459,47 @@ font-size: 16px;
 #chooseFile {
   color: #697077;
 }
+
+/* Why should you be a volunteer */
+
+.flexWhyShould {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 118px;
+  padding-right: 118px;
+  padding-bottom: 80px;
+}
+
+.flexRow {
+  width: 359px;
+  color: #081F5C;
+
+}
+
+.blueCircle {
+  width: 141px;
+  height: 141px;
+}
+
+.pBlueCircle {
+font-family: Roboto;
+font-weight: 400;
+font-size: 18px;
+line-height: 140%;
+}
+
+/* stats */
+
+.statsFlex {
+  padding-left: 70px;
+  padding-right: 70px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 80px;
+  
+}
+
+.blueRect {
+
+}
+

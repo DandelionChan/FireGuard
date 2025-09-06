@@ -8,11 +8,11 @@ const Navigation = () => {
             <div className="flexContainer">
             <ul className="navigationList">
                 <li><Link to="/">Начало</Link></li>
-                <li><Link to="volunteers">Доброволци</Link></li>
-                <li><Link to="map">Карта</Link></li>
-                <li><Link to="info">Информация</Link></li>
-                <li><Link to="SignalFire">Сигнал</Link></li>
-                <li><Link to="aboutus">За нас</Link></li>
+                <li><Link to="/volunteers">Доброволци</Link></li>
+                <li><Link to="/map">Карта</Link></li>
+                <li><Link to="/info">Информация</Link></li>
+                <li><Link to="/SignalFire">Сигнал</Link></li>
+                <li><Link to="/aboutus">За нас</Link></li>
                 
             </ul>
             <button className="firstButton" id="fundMe">Дари</button>

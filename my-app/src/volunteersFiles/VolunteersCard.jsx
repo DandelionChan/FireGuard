@@ -1,11 +1,13 @@
-const VolunteersCard = ({title, body, imgSrc, alt}) => {
+const VolunteersCard = ({body, imgSrc, alt}) => {
     return (
-        <div className="card border gridColumnCard">
-            <img src={imgSrc} alt={alt} className="center"></img>
-            <h3 className="center">{title}</h3>
-            <p className="centervertically">{body}</p>
+        <div className="flexWhyShould centered">
+            <div className="flexRow">
+                <img src={imgSrc} alt={alt} className="blueCircle"/>
+                <p className="pBlueCircle">{body}</p>
+            </div>
         </div>
     )
 }
 
 export default VolunteersCard
+

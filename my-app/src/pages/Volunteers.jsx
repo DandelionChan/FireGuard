@@ -2,7 +2,8 @@ import Navigation from "../homeFiles/Navigation";
 import Head from "../homeFiles/Head";
 import VolunteersCard from "../volunteersFiles/VolunteersCard";
 import { useState, useEffect } from "react";
-import {VolunteersHelp} from './volunteersHelp'
+import FormBecomeVolunteer from "../volunteersFiles/FormBecomVolunteer";
+import HeadVolunteers from "../volunteersFiles/HeadVolunteers";
 
 const Volunteers = () => {
     const [cards, setCards] = useState([]);
@@ -17,8 +18,8 @@ const Volunteers = () => {
     return (
         <>
          <Navigation />
-         <Head />
-         <h2 className="center">Какво означава да си доброволец?</h2>
+         <HeadVolunteers />
+         <h2 className="Component">Защо да станеш доброволец?</h2>
          <div className="flexContainer">
         {cards.map((card, index) => (
         <VolunteersCard
@@ -30,10 +31,7 @@ const Volunteers = () => {
         />
       ))}
          </div>
-      <VolunteersHelp/>
-
-        
-
+      <FormBecomeVolunteer />
         </>
     )
 }

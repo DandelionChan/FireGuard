@@ -3,12 +3,14 @@ import { useState } from "react";
 const FormBecomeVolunteer = () => {
 
     const [formData, setFormData] = useState({
-        name: "",
+        firstName: "",
+        familyName: "",
         email: "",
         phone: "",
-        skills: "",
+        city: ""
     });
 
+    const [file, setFile] = useState(null); 
     const [responseMsg, setResponseMsg] = useState("");
 
     const handleChange = (e) => {
@@ -16,10 +18,24 @@ const FormBecomeVolunteer = () => {
         setFormData((prev) => ({ ...prev, [name]: value }));
     };
 
+    const handleFileChange = (e) => {
+    setFile(e.target.files[0]);
+  };
+
+  const data = new FormData();
+    data.append("firstName", formData.firstName);
+    data.append("familyName", formData.familyName);
+    data.append("email", formData.email);
+    data.append("phone", formData.phone);
+    data.append("city", formData.city);
+    if (file) {
+      data.append("picture", file);
+    }
+
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-    const response = await fetch("#", {
+    const response = await fetch("http://localhost:5000/volunteers", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(formData),
@@ -27,37 +43,104 @@ const FormBecomeVolunteer = () => {
 
      const result = await response.json();
      setResponseMsg(result.message || "Submitted successfully!");
-     setFormData({ name: "", email: "", phone: "", skills: "" }); 
+     setFormData({ firstName: "", familyName: "", email: "", phone: "", city: "" }); 
 
     }
 
         return (
-            <form onSubmit={handleSubmit}>
-                <label className="">Full Name</label>
+        <>
+        <div className = "FormVol">
+        <div className="formVolText paddingSides centered right">
+       
+        <div className="leftAlign">
+         <div>
+            <form onSubmit={handleSubmit} className="VolunteerForm rightHeaderTextVol">
+                <div className="flexColumns">
+                <div className="flexRows">
+                <div className="flexColumns">
+                <label className="normalLabel">Име</label>
                 <input
                     type="text"
-                    name="name"
-                    value={formData.name}
+                    name="firstName"
+                    value={formData.firstName}
                     onChange={handleChange}
                     required
-                    className=""
+                    className="smallInput"
                 />
-                <label className="">Email</label>
+                </div>
+                <div className="flexColumns"> 
+                <label className="normalLabel">Фамилия</label>
+                <input
+                    type="text"
+                    name="familyName"
+                    value={formData.familyName}
+                    onChange={handleChange}
+                    required
+                    className="smallInput"
+                />
+                </div>
+                </div>
+                <label className="normalLabel">Имейл</label>
                 <input
                     type="text"
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className=""
+                    className="longInput"
                 />
+                <label className="normalLabel">Телефонен номер</label>
+                <input
+                    type="text"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    required
+                    className="longInput"
+                />
+                <label className="normalLabel">Град</label>
+                <input
+                    type="text"
+                    name="city"
+                    value={formData.city}
+                    onChange={handleChange}
+                    required
+                    className="longInput"
+                />
+                <label className="normalLabel">Прикачи сертификат</label>
+                <div className="file-upload">
+                <input
+                    type="file"
+                    id="fileInput"
+                    onChange={handleFileChange}
+                    accept="image/*"
+                    multiple={false}
+                    className="file-upload"
+                />
+                <label htmlFor="fileInput" className="file-dropzone">
+                    <span className="file-icon">⬇️</span>
+                    <p id="chooseFile">Choose a file or drag it here</p>
+                </label>
+                </div>
         <button
           type="submit"
-          className=""
-        >
-          Submit
+          className="firstButton"
+          id="register"
+        >Регистрирай се
         </button>
-            </form>
+        </div>
+        </form>
+        {responseMsg && <p className="">{responseMsg}</p>}
+         <div/>
+         </div>
+         </div>
+          <img  src="src/assets/blue gradient.png" className="formRightBlueGradient"/>
+         </div>
+        <img src="src/assets/heart.jpg" alt="Become a volunteer" className="rightFormGogi"></img>
+        
+         </div>
+            
+         </>
         )
 
     }

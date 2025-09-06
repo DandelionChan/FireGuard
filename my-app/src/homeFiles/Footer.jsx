@@ -1,25 +1,25 @@
 const Footer = () => {
     return (
         <footer>
-            <div className="center bgColor">
-                <div className="flexColumn">
+            <div className="center">
+                <div className="flexColumn paddingSides footer">
                     <div>
                         <ul className="flexContainer">
-                            <li>fsfs</li>
-                            <li>fsfs</li>
-                            <li>fsfs</li>
-                            <li>fsfs</li>
+                            <li>Начало</li>
+                            <li>Доброволци</li>
+                            <li>Карта</li>
+                            <li>Информация</li>
                         </ul>
                     </div>
                     <div>
                         <ul className="flexContainer"> 
-                            <li>fsf</li>
-                            <li>fsfsfsf</li>
-                            <li>fsfs</li>
-                            <li>fsfs</li>
+                            <li><img src="" alt=""/></li>
+                            <li><img src="" alt=""/></li>
+                            <li><img src="" alt=""/></li>
+                            <li><img src="" alt=""/></li>
                         </ul>
                     </div>
-                    <p className="center">CopyRight</p>
+                    <p className="center">CompanyName @ 202X. All rights reserved.</p>
                 </div>
             </div>
         </footer>

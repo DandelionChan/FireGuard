@@ -6,6 +6,9 @@ import Footer from "../homeFiles/Footer";
 import Stats from "../homeFiles/Stats";
 import CenteredText from "../components/centeredText";
 import Partners from "../homeFiles/Partners";
+import { useState, useEffect } from "react";
+import VideoPageInfo from "../homeFiles/VideoPageInfo";
+import WhyAreWeHere from "../homeFiles/WhyAreWeHere";
 
 const Home = () => {
     return (
@@ -13,10 +16,22 @@ const Home = () => {
        <Navigation />
        <Head />
        <CenteredText />
+       <div className="centered">
+       <button className="learnMoreBttn">Научи повече</button>
+       </div>
+       <div className="filler"></div>
        <VolunteersInfo />
        <Stats />
-       <Partners />
+       <div className="filler"></div>
+       <VideoPageInfo />
+       
        <Funds />
+       <div className="centered">
+       <button className="firstButton">Дарете сега </button>
+       </div>
+       <div className="filler"></div>
+       <Partners />
+       <WhyAreWeHere />
        <Footer />
         </>
     )

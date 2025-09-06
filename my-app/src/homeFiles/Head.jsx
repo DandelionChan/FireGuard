@@ -1,9 +1,12 @@
 const Head = () => {
     return (
-        <header className="backgroundImg border">
+        <header className="backgroundImg">
+            <div className="left">
             <div className="headerText">
-            <h2>Hello Welcome</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the in</p>
+            <h2>Следи пожарите на живо. Бъди информиран, бъди подготвен</h2>
+            <p>Интерактивна карта, която комбинира актуални данни за пожарите с прогноза за тяхното разрастване – симулация на риска за следващите часове</p>
+            <button className="firstButton">Виж карта</button>
+            </div>
             </div>
         </header>
     )

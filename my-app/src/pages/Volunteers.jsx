@@ -2,6 +2,7 @@ import Navigation from "../homeFiles/Navigation";
 import Head from "../homeFiles/Head";
 import VolunteersCard from "../volunteersFiles/VolunteersCard";
 import { useState, useEffect } from "react";
+import {VolunteersHelp} from './volunteersHelp'
 
 const Volunteers = () => {
     const [cards, setCards] = useState([]);
@@ -29,6 +30,10 @@ const Volunteers = () => {
         />
       ))}
          </div>
+      <VolunteersHelp/>
+
+        
+
         </>
     )
 }

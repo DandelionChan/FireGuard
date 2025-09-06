@@ -1,0 +1,94 @@
+.info{
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsla(0 , 0%, 0%, 0.1 );
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+   background: #1e3a8a;
+   color: white;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.about-us-container{
+  display: flex;
+}
+ 
+.headerText h2{
+  margin: 30px;
+}
+
+.headerText p {
+  margin-left: 30px;
+}
+
+.help-section {
+  display: flex;
+  flex-direction: column;
+  background: #0a2b66;
+  color: white;
+  padding: 3rem 1.5rem;
+  align-items: center;
+}
+
+.help-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.help-image img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.help-content {
+  flex: 1;
+  margin-top: 2rem;
+  max-width: 600px;
+}
+
+.help-content h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.help-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.help-grid h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.help-grid p {
+  color: #d1d5db; /* lighter text for readability */
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+/* Responsive: 2 columns on larger screens */
+@media (min-width: 768px) {
+  .help-section {
+    flex-direction: row;
+    padding: 4rem 3rem;
+  }
+
+  .help-content {
+    margin-top: 0;
+    padding-left: 3rem;
+  }
+
+  .help-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

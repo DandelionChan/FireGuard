@@ -1,5 +1,3 @@
-import Navigation from "./homeFiles/Navigation";
-import './App.css';
 
 const VolunteersInfo = () => {
     return (

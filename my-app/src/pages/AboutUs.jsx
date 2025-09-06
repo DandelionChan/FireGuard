@@ -1,6 +1,8 @@
+import AboutUspannel from "../aboutUsFiles/about"
+
 const AboutUs = () => {
     return (
-        <h1>About us</h1>
+     <AboutUspannel />
     )
 }
 

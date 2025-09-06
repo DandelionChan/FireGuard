@@ -2,7 +2,7 @@ export const VolunteersHelp = () => { return (<section className="help-section">
       {/* Left image */}
       <div className="help-image">
         <img
-          src="/hands.jpg" // replace with your image path
+          src="/src/assets/helping hands.jpg" 
           alt="Helping hands"
         />
       </div>

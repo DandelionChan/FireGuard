@@ -2,7 +2,7 @@ const VolunteersHelp = () => { return (<section className="help-section">
       {/* Left image */}
       <div className="help-image">
         <img
-          src="/src/assets/helping hands.jpg" 
+          src="/src/assets/hand.png" 
           alt="Helping hands"
         />
       </div>

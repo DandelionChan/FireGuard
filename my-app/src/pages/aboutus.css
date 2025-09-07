@@ -98,15 +98,24 @@ text-align: center;
 }
 
 .help-grid h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+font-family: Roboto;
+font-weight: 700;
+font-size: 28px;
+line-height: 110.00000000000001%;
+font-size: 1.25rem;
+font-weight: 600;
+margin-bottom: 0.5rem;
 }
 
 .help-grid p {
-  color: #d1d5db; /* lighter text for readability */
+  color: #d1d5db;
   line-height: 1.5;
-  font-size: 1rem;
+  font-family: Roboto;
+font-weight: 400;
+opacity: 0.7;
+font-size: 18px;
+line-height: 140%;
+
 }
 
   .help-content {

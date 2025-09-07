@@ -20,7 +20,9 @@ const Footer = () => {
                              <li><img src="src/assets/li.png" alt="LinkedIn"/></li>
                         </ul>
                     </div>
-                    <p className="center">CompanyName @ 202X. All rights reserved.</p>
+                    {/* add  */}
+                    <p className="center copyright">CompanyName @ 202X. All rights reserved.</p>
+                    {/* add  */}
                 </div>
             </div>
         </footer>

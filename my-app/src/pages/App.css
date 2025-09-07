@@ -304,7 +304,7 @@ color: #21272A;
 }
 
 .volunteers {
-  position: relative;
+  /* position: relative; */
   display: flex;
   justify-content: space-between;
 }
@@ -399,13 +399,7 @@ object-fit: cover;
   right: 550px
 }
 
-.blueRect {
-width: 307px;
-height: 112px;
-border-radius: 12px;
-padding: 16px;
-color:  #D0E3FF;
-}
+
 
 .footer {
   padding-top: 48px;
@@ -490,7 +484,29 @@ font-size: 18px;
 line-height: 140%;
 }
 
-/* stats */
+/* add later */
+
+.rightSide {
+  position: absolute;
+  right: 0;
+}
+
+
+.rel {
+    height: 574px;
+    position: relative;
+}
+
+
+.rightGogi{
+position: absolute;
+left: 0;
+width: 973px;
+height: 574px;
+z-index: -2;
+aspect-ratio: 16 / 9;
+object-fit: cover;
+}
 
 .statsFlex {
   padding-left: 70px;
@@ -498,12 +514,50 @@ line-height: 140%;
   display: flex;
   justify-content: space-between;
   padding-bottom: 80px;
-  
+  gap: 24px;
+}
+
+.blueRect p {
+margin: 0;
+font-family: Roboto;
+font-weight: 400;
+font-size: 20px;
+line-height: 140%;
+text-align: center;
+padding-left: 50px;
+padding-right: 50px;
+color:  #404040;
+
+}
+
+.copyright {
+font-family: Roboto;
+font-weight: 400;
+font-size: 14px;
+line-height: 140%;
+text-align: center;
+
 }
 
 .blueRect {
-
+  background-color: #D0E3FF;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
 }
+
+.blueRect h3 {
+font-family: Roboto;
+margin-top: 5px;
+margin-bottom: 5px;
+font-weight: 600;
+font-size: 36px;
+line-height: 110.00000000000001%;
+text-align: center;
+color:  #081F5C;
+}
+
+/* add later end */
 
 .partnersBackground {
   background-color: #D0E3FF;

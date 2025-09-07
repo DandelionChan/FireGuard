@@ -9,10 +9,9 @@
   flex-direction: column;
 }
 
-.noPAdding {
-  padding: 5px;
-  margin: 0;
-}
+
+
+/* add later */
 
 .infoPar {
   opacity: 0.7;
@@ -21,6 +20,31 @@
   padding-left: 28px;
   padding-right: 28px;
   margin: 0;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+}
+
+.noPAdding {
+  padding: 5px;
+  margin: 0;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 110.00000000000001%;
+  text-align: center;
+}
+
+.smallText {
+font-family: Roboto;
+font-weight: 400;
+font-size: 14px;
+line-height: 140%;
+text-align: center;
+padding: 5px;
+margin-bottom: 28px;
 }
 
 .info img {

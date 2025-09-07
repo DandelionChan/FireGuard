@@ -1,6 +1,8 @@
-import AboutUspannel from "../aboutUsFiles/about"
-import Navigation from "../homeFiles/Navigation"
-import HeadAboutUs from "../aboutUsFiles/HeadAboutUs"
+import AboutUspannel from "../aboutUsFiles/about";
+import Navigation from "../homeFiles/Navigation";
+import HeadAboutUs from "../aboutUsFiles/HeadAboutUs";
+import Stats from "../homeFiles/Stats";
+
 
 const AboutUs = () => {
     return (
@@ -8,6 +10,7 @@ const AboutUs = () => {
             <Navigation />
             <HeadAboutUs />
             <AboutUspannel />
+            <Stats />
         </>
     )
 }

@@ -1,0 +1,40 @@
+/* Input error styling */
+.input-error {
+  border-color: #ef4444 !important;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15);
+}
+
+/* Inline field error text */
+.field-error {
+  color: #b91c1c;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+/* Status message styles */
+.form-message {
+  margin-top: 16px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border-left: 4px solid transparent;
+}
+
+.form-message.success {
+  background: #ecfdf5;
+  color: #065f46;
+  border-left-color: #10b981;
+}
+
+.form-message.error {
+  background: #fef2f2;
+  color: #7f1d1d;
+  border-left-color: #ef4444;
+}
+
+/* File dropzone border adjust on error (if it has borders) */
+.file-dropzone.input-error {
+  border-color: #ef4444 !important;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15);
+}
+

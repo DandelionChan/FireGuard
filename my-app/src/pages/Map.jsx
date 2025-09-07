@@ -8,7 +8,7 @@ const MapPage = () => {
     <>
     <style></style>
       <Navigation />
-      <div className="wildfire-theme" style={{ height: "100vh" }}>
+      <div className="wildfire-theme" style={{ height: "100vh", position: "relative" }}>
         <WildfireMap />
       </div>
       <Footer />
@@ -17,5 +17,4 @@ const MapPage = () => {
 };
 
 export default MapPage;
-
 

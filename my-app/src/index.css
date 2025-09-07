@@ -61,6 +61,15 @@
   color: #213547;
 }
 
+/* Ensure Mapbox popups render above the map and other content on the map page only */
+.wildfire-theme .mapboxgl-popup {
+  position: absolute;
+  z-index: 9999;
+}
+.wildfire-theme .mapboxgl-popup-content {
+  border-radius: 8px;
+}
+
 
 
 h1 { font-size: 3.2em; line-height: 1.1; }

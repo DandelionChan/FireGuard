@@ -12,8 +12,8 @@ const Info = () => {
     <Navigation />
       {information.videosInfo.map((e, index) => (
         <div key={index} className="info-section" style={{ backgroundColor: e.color }}>
-          <h1 className="infoHeading" style={{ titleColor: e.titleColor }}>{e.heading}</h1>
-          <p className="paragraphInfo paddingSides" style={{ bodyColor: e.bodyColor }}>{e.paragraph}</p>
+          <h1 className="infoHeading" style={{ color: e.titleColor }}>{e.heading}</h1>
+          <p className="paragraphInfo paddingSides" style={{ color: e.bodyColor }}>{e.paragraph}</p>
           <div className="centerVideo">
           <video className="video-container" width="800" height="393" controls>
            <source src={e.videoSrc} type="video/mp4" />

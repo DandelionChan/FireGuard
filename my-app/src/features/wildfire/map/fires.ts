@@ -198,9 +198,15 @@ export async function renderFires(map: mapboxgl.Map, fireData: FireData[], h: Ha
     });
   };
 
+  // Avoid duplicate listeners if renderFires is called multiple times
+  const anyMap = map as any;
+  if (anyMap._fireClickHandler) {
+    try { map.off('click', 'fires', anyMap._fireClickHandler); } catch {}
+  }
+  anyMap._fireClickHandler = handleFireClick;
   map.on('click', 'fires', handleFireClick);
 
-  map.on('click', 'report-icons', async (e: mapboxgl.MapLayerMouseEvent) => {
+  const handleReportIconClick = async (e: mapboxgl.MapLayerMouseEvent) => {
     if (!e.features || e.features.length === 0) return;
     const feature = e.features[0] as mapboxgl.MapboxGeoJSONFeature;
     const geometry = feature.geometry as Point;
@@ -270,10 +276,21 @@ export async function renderFires(map: mapboxgl.Map, fireData: FireData[], h: Ha
         });
       });
     }
-  });
+  };
+  if (anyMap._reportIconClickHandler) {
+    try { map.off('click', 'report-icons', anyMap._reportIconClickHandler); } catch {}
+  }
+  anyMap._reportIconClickHandler = handleReportIconClick;
+  map.on('click', 'report-icons', handleReportIconClick);
 
-  map.on('mouseenter', 'fires', () => { map.getCanvas().style.cursor = 'pointer'; });
-  map.on('mouseleave', 'fires', () => { map.getCanvas().style.cursor = ''; });
+  const enter = () => { map.getCanvas().style.cursor = 'pointer'; };
+  const leave = () => { map.getCanvas().style.cursor = ''; };
+  if (anyMap._fireEnterHandler) { try { map.off('mouseenter', 'fires', anyMap._fireEnterHandler); } catch {} }
+  if (anyMap._fireLeaveHandler) { try { map.off('mouseleave', 'fires', anyMap._fireLeaveHandler); } catch {} }
+  anyMap._fireEnterHandler = enter;
+  anyMap._fireLeaveHandler = leave;
+  map.on('mouseenter', 'fires', enter);
+  map.on('mouseleave', 'fires', leave);
 
   return features.length;
 }

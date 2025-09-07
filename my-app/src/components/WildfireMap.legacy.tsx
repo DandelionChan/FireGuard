@@ -480,7 +480,7 @@ const WildfireMap: React.FC = () => {
                     acq_time = `${hh}${mm}`;
                   } catch {}
                 }
-                const imageUrl = filename ? `http://localhost:3000/uploads/fire/${filename}` : undefined;
+                const imageUrl = filename ? `http://localhost:3000/uploads/fires/${filename}` : undefined;
                 const item: FireData = {
                   latitude: lat,
                   longitude: lng,
@@ -557,7 +557,7 @@ const WildfireMap: React.FC = () => {
                 const lng = parseFloat(rep.lng ?? rep.lon ?? rep.longitude);
                 const filename = rep.filename || rep.file;
                 if (!isFinite(lat) || !isFinite(lng)) return null;
-                const imageUrl = filename ? `http://localhost:3000/uploads/fire/${filename}` : undefined;
+                const imageUrl = filename ? `http://localhost:3000/uploads/fires/${filename}` : undefined;
                 return {
                   latitude: lat, longitude: lng, bright_ti4: 0, scan: 0, track: 0,
                   acq_date: '', acq_time: '', satellite: 'REPORT', instrument: 'USER', confidence: 'n', version: '', bright_ti5: 0, frp: 0, daynight: 'D', isReport: true, imageUrl

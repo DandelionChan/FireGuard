@@ -24,7 +24,7 @@ export async function fetchReports(): Promise<FireData[]> {
             acq_time = `${hh}${mm}`;
           } catch {}
         }
-        const imageUrl = filename ? `http://localhost:3000/uploads/fire/${filename}` : undefined;
+        const imageUrl = filename ? `http://localhost:3000/uploads/fires/${filename}` : undefined;
         const item: FireData = {
           latitude: lat,
           longitude: lng,

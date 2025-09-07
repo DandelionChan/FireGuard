@@ -1,0 +1,165 @@
+/* Reuse the same visual language as volunteer form */
+.input-error {
+  border-color: #ef4444 !important;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15);
+}
+
+.field-error {
+  color: #b91c1c;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+.form-message {
+  margin-top: 16px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border-left: 4px solid transparent;
+}
+
+.form-message.success {
+  background: #ecfdf5;
+  color: #065f46;
+  border-left-color: #10b981;
+}
+
+.form-message.error {
+  background: #fef2f2;
+  color: #7f1d1d;
+  border-left-color: #ef4444;
+}
+
+.file-dropzone.input-error {
+  border-color: #ef4444 !important;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15);
+}
+
+.signal-fire-form { margin-top: 12px; max-width: 760px; margin-left: auto; margin-right: auto; }
+
+.signal-fire-card {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+
+.row { display: flex; gap: 16px; align-items: center; justify-content: center; margin-bottom: 16px; flex-wrap: nowrap; }
+
+.row .half { flex: 0 0 280px; min-width: 0; }
+.field-group { display: flex; flex-direction: column; }
+.error-slot { min-height: 18px; margin-top: 4px; }
+
+.btn-col { flex: 0 0 140px; display: flex; align-items: stretch; align-self: center; }
+
+.full-width {
+  width: 100%;
+}
+
+.hidden-label { display: none; }
+
+/* Simple input sizing */
+.signal-fire-form .smallInput, .signal-fire-form .longInput, .signal-fire-form input[type="number"] { width: 100%; }
+/* Match input and GPS button heights */
+.signal-fire-form .smallInput,
+.signal-fire-form .longInput,
+.signal-fire-form input[type="number"],
+.signal-fire-form .secondaryButton {
+  height: 44px;
+  box-sizing: border-box;
+}
+
+/* File dropzone */
+.signal-fire-card .file-dropzone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  min-height: 64px;
+  margin-top: 6px;
+  border: 2px dashed #cbd5e1;
+  border-radius: 10px;
+  background: #f8fafc;
+  color: #334155;
+  cursor: pointer;
+}
+.signal-fire-card .file-dropzone:hover {
+  border-color: #94a3b8;
+  background: #f1f5f9;
+}
+
+/* Buttons */
+.signal-fire-card .firstButton.primaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: background .2s ease, transform .05s ease;
+}
+.signal-fire-card .firstButton.primaryButton:hover {
+  background: #1d4ed8;
+}
+.signal-fire-card .firstButton.primaryButton:active {
+  transform: translateY(1px);
+}
+.signal-fire-card .firstButton.primaryButton:disabled {
+  opacity: .7;
+  cursor: not-allowed;
+}
+
+.signal-fire-card .secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 12px;
+  background: #ffffff;
+  color: #1f2937;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: color .2s ease, border-color .2s ease, background .2s ease;
+}
+.signal-fire-card .secondaryButton:hover {
+  background: #f9fafb;
+  border-color: #9ca3af;
+}
+
+/* Remove spinners for number inputs for a cleaner look */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.btn-row { margin-top: 12px; display: flex; justify-content: center; }
+
+/* Style the GPS button simply */
+.signal-fire-form .secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 12px;
+  background: #ffffff;
+  color: #1f2937;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background .2s ease, border-color .2s ease;
+}
+.signal-fire-form .secondaryButton:hover {
+  background: #f9fafb;
+  border-color: #9ca3af;
+}

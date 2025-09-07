@@ -10,6 +10,7 @@ import { useState, useEffect } from "react";
 import VideoPageInfo from "../homeFiles/VideoPageInfo";
 import WhyAreWeHere from "../homeFiles/WhyAreWeHere";
 import { Link } from "react-router-dom";
+import FormSignalFire from "../SignalFireFiles/FormSignalFire";
 
 const Home = () => {
     return (
@@ -17,10 +18,7 @@ const Home = () => {
        <Navigation />
        <Head />
        <CenteredText />
-       <twoButtons />
-       <div className="centered">
-       <button className="learnMoreBttn"><Link to = "/Donate">Научи повече</Link></button>
-       </div>
+       <FormSignalFire />
        <div className="filler"></div>
        <VolunteersInfo />
        <Stats />

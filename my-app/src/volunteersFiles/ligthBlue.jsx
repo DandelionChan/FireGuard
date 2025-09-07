@@ -1,6 +1,6 @@
 const LightBlue = () => {
     return (
-        <div className="flexWhyShould centered">
+        <div className="flexWhyShould centered abs" style={{marginTop  :"300px"}}> 
             <div className="flexRow">
                 <img src="src/assets/drkCircle.png" className="blueCircle"/>
                 <h2> Да бъдеш в подкрепа</h2>

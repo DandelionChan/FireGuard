@@ -3,7 +3,6 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
-import 'mapbox-gl/dist/mapbox-gl.css';
 import { Flame, Cloud, Thermometer, Wind, Map as MapIcon, Image, Mountain, Moon, Camera } from 'lucide-react';
 import { computeFWI, FWIResult } from "./FWI/ComputeFWI";
 import type { Feature, LineString, Point, Polygon } from 'geojson';

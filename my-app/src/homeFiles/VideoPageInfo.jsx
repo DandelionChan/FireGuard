@@ -1,9 +1,11 @@
 const VideoPageInfo = () => {
     return (
         <>
+        <div className="rel">
             <div className="volunteers">
-                <img src="src/assets/videoInfo.jpg" alt="Learn from our videos" className="gogi" />
-                <div className="volText paddingSides centered">
+                <img src="src/assets/videoInfo.jpg" alt="Learn from our videos" className="rightGogi" />
+                <img  src="src/assets/blue gradient.png" className="rightBlueGradient"/>
+                <div className="volText paddingSides rightSide">
                     <div className="leftAlign">
                         <h2>Знанието спасява животи</h2>
                         <p>
@@ -15,7 +17,7 @@ const VideoPageInfo = () => {
                 </div>
 
 
-            </div>
+            </div></div>
         </>
     )
 }

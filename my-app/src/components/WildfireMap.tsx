@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
-import 'mapbox-gl/dist/mapbox-gl.css';
 import { Flame, Camera } from 'lucide-react';
 import type { FireData, WeatherData } from '@/features/wildfire/types';
 import { usePredictions } from '@/features/wildfire/hooks/usePredictions';

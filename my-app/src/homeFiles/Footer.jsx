@@ -21,7 +21,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     {/* add  */}
-                    <p className="center copyright">CompanyName @ 202X. All rights reserved.</p>
+                    <p className="center copyright">Bulgarian Fire Volunteers @ 202X. All rights reserved.</p>
                     {/* add  */}
                 </div>
             </div>

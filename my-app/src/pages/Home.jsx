@@ -9,6 +9,7 @@ import Partners from "../homeFiles/Partners";
 import { useState, useEffect } from "react";
 import VideoPageInfo from "../homeFiles/VideoPageInfo";
 import WhyAreWeHere from "../homeFiles/WhyAreWeHere";
+import { Link } from "react-router-dom";
 
 const Home = () => {
     return (
@@ -16,8 +17,9 @@ const Home = () => {
        <Navigation />
        <Head />
        <CenteredText />
+       <twoButtons />
        <div className="centered">
-       <button className="learnMoreBttn">Научи повече</button>
+       <button className="learnMoreBttn"><Link to = "/Donate">Научи повече</Link></button>
        </div>
        <div className="filler"></div>
        <VolunteersInfo />

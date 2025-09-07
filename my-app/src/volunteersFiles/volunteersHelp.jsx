@@ -1,4 +1,4 @@
-export const VolunteersHelp = () => { return (<section className="help-section">
+const VolunteersHelp = () => { return (<section className="help-section">
       {/* Left image */}
       <div className="help-image">
         <img
@@ -39,4 +39,8 @@ export const VolunteersHelp = () => { return (<section className="help-section">
           </div>
         </div>
       </div>
-      </section>)}
+      </section>)
+    }
+
+    export default VolunteersHelp
+

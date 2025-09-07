@@ -1,18 +1,35 @@
 .info{
-  border: 1px solid hsl(0, 0%, 80%);
   border-radius: 10px;
-  box-shadow: 5px 5px 5px hsla(0 , 0%, 0%, 0.1 );
-  padding: 20px;
-  margin: 10px;
+  margin: 28px;
   text-align: center;
-   background: #1e3a8a;
-   color: white;
-    display: flex;
-    flex-direction: column;
-    
+  background: #D0E3FF;
+  color: #081F5C;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.noPAdding {
+  padding: 5px;
+  margin: 0;
+}
+
+.infoPar {
+  opacity: 0.7;
+  padding-top: 28px;
+  padding-bottom: 14px;
+  padding-left: 28px;
+  padding-right: 28px;
+  margin: 0;
+}
+
+.info img {
+  width: 48px;
+  height: 48px;
 }
 
 .about-us-container{
+  margin-top: 80px;
   display: flex;
 }
  
@@ -25,12 +42,11 @@
 }
 
 .help-section {
+  flex-direction: row;
   display: flex;
-  flex-direction: column;
   background: #0a2b66;
   color: white;
   align-items: center;
-  max-width: 1200px;
 }
 
 /* .help-image {
@@ -40,15 +56,11 @@
 } */
 
 .help-image img {
-  max-width: 700px;
-}
-
-.help-content {
-  
+  width: 700px;
 }
 
 .help-content h2 {
- font-family: Roboto;
+font-family: Roboto;
 font-weight: 600;
 font-size: 42px;
 line-height: 110.00000000000001%;
@@ -73,10 +85,6 @@ text-align: center;
   font-size: 1rem;
 }
 
-  .help-section {
-    flex-direction: row;
-  }
-
   .help-content {
     margin-top: 0;
     padding-left: 3rem;
@@ -93,6 +101,7 @@ text-align: center;
 
   .paragraphInfo{
       text-align: center;
+      margin-bottom: 80px;
       
 }
 
@@ -103,10 +112,10 @@ text-align: center;
 }
 
 .info-section {
-   font-family: "Montserrat", sans-serif;
-  background-color: #0A1F44; /* dark blue */
+  font-family: "Montserrat", sans-serif;
+  background-color: #0A1F44;
   padding: 40px;
-  /*margin: 20px 0;*/
+  height: 620px;
   text-align: center;
   color: white;
 }

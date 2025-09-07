@@ -21,6 +21,7 @@ body {
 }
 
 .flexContainer {
+  margin: 0;
   gap: 16px;
   align-items: center;
   display: flex;
@@ -257,10 +258,11 @@ color: #081F5C;
 }
 
 .formVolText {
+  align-items: center;
   position: absolute;
   right: 0;
   width: calc(100vw - 650px);
-  height: 100vh;
+  height: 800px;
   display: flex;
   justify-content: center;
   background-color: #081F5C;
@@ -269,7 +271,7 @@ color: #081F5C;
 }
 
 .rel {
-    height: 100vh;
+    height: 800px;
     position: relative;
 }
 
@@ -320,7 +322,7 @@ color: #21272A;
 }
 
 .VolunteerForm {
-  height: 100vh;
+  height: 800px;
   max-width: 616px;
   background-color: #081F5C;
 }
@@ -366,7 +368,7 @@ aspect-ratio: 16 / 9;
 position: absolute;
 left: 0;
 width: 700px;
-height: 100vh;
+height: 800px;
 z-index: -2;
 aspect-ratio: 16 / 9;
 object-fit: cover;
@@ -384,7 +386,7 @@ object-fit: cover;
   transform: scaleX(-1);
   position: absolute;
   z-index: -1;
-  height: 100vh;
+  height: 800px;
   right: 750px;
 }
 
@@ -503,3 +505,28 @@ line-height: 140%;
 
 }
 
+.partnersBackground {
+  background-color: #D0E3FF;
+}
+
+.smMargin {
+  margin-top: 25px;
+}
+
+.centerVideo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.backgroundImgAboutUs {
+  background-image: url("../assets/HeadAboutUs.png");
+  width: 100%;
+  height: calc(100vh - 77px);
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}

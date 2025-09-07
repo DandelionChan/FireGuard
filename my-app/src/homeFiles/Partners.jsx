@@ -1,11 +1,12 @@
 const Partners = () => {
     return (
-        <div>
-            <ul className="flexContainer">
-                <li className="flexContainer"><img src="#" className="partner border"/><p>frfefe</p></li>
-                <li className="flexContainer"><img src="#" className="partner border"/><p>fefe</p></li>
-                <li className="flexContainer"><img src="#" className="partner border"/><p>fefe</p></li>
-                <li className="flexContainer"><img src="#" className="partner border"/><p>feef</p></li>
+        <div className="partnersBackground">
+            <ul className="flexContainer paddingSides">
+                <li className="flexContainer"><img src="src/assets/image 3.png" className="partner"/></li>
+                <li className="flexContainer"><img src="src/assets/logo transperent.png" className="partner"/></li>
+                <li className="flexContainer"><img src="src/assets/image 4.png" className="partner"/></li>
+                <li className="flexContainer"><img src="src/assets/image 1.png" className="partner"/></li>
+                <li className="flexContainer"><img src="src/assets/image 5.png" className="partner"/></li>
             </ul>
         </div>
     )
